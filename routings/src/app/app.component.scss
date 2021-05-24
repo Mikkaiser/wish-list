@@ -1,0 +1,25 @@
+mat-sidenav-container {
+  height: 100%;
+
+  mat-sidenav {
+    background: lightcoral;
+    width: 200px;
+    padding: 16px;
+    background: rgb(73, 106, 255);
+    
+    h1 {
+      color: white;
+      font-weight: bold;
+    }
+    
+    nav a{
+      outline: none;
+      color: white;
+      text-decoration: none;
+    }
+
+    mat-sidenav-content {
+      padding: 16px;
+    }
+  }
+}

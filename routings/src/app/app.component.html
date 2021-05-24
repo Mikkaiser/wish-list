@@ -1,0 +1,19 @@
+
+<!-- Creates a layout with a left-positioned sidenav and explicit content. -->
+<mat-sidenav-container>
+  <mat-sidenav  #sideNav [(opened)]="sideBarState" mode="side">
+    <h1>SideNav</h1>
+    <nav class="primaryNav">
+      <a routerLink="home">Home</a><br>
+      <a routerLink="login">Login</a><br>
+      <a routerLink="cursos">Cursos</a><br>
+    </nav>
+  </mat-sidenav>
+  <mat-sidenav-content class="container">
+    <span>Main</span>
+    <router-outlet></router-outlet>
+    <button (click)="sideNav.toggle()">Toggle SideBar</button>
+    <button (click)="sideNav.open()">Open</button>
+    <button (click)="sideNav.close()">Close</button>
+  </mat-sidenav-content>
+</mat-sidenav-container>
